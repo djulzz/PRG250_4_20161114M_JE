@@ -14,9 +14,13 @@
 	g_new_window = window.open( "", "", "", "" );
 
 	// How to write to the new window:
-	g_new_window.document.write( "This belongs to the second page" );
+	g_new_window.document.write( "This belongs to the second page<br/>" );
 	// this.style.backgroundColor = "black";
 
+	// if we want to wipe out the content of the 2nd window brfore writing to it,
+	// let's do this instead
+	g_new_window.document.open();
+	
 	g_new_window.document.write( "This should replace the 1st content of our second page" );
 
 </script>
