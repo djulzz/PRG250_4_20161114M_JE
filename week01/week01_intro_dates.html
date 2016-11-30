@@ -73,6 +73,15 @@
 <body>
 	<script type="text/javascript">
 		var date = new Date();
+		var type_as_string = date.toString();
+		document.write( type_as_string + "<br/>");
+		if( type_as_string == "Date" ) {
+			document.write( "we have a Date<br/>");
+		}else {
+			document.write( "We don't <br />");
+			documen
+		}
+		document.write( "Eric Lopez \"thinks\" that the answer is : " +type_as_string );
 
 		// This actually returns the day of the month [1-31]
 		var currentDay = date.getDate();
